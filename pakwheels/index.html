@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script>
+        function scroller()
+        {
+            var contain1=document.getElementById('containerone');
+            var contain2=document.getElementById('container2');
+            var y=window.scrollY;
+            if(y<450)
+            {
+                contain1.style.display="block";
+            
+                contain1.style.left="7%";
+                contain2.style.display="none";
+        
+                
+                
+                console.log(y);
+                
+            }else{
+                contain2.style.display="block";
+                contain2.style.position="fixed";
+                contain2.style.left="7%";
+                contain1.style.display="none";
+
+                
+            }
+        }
+        
+    </script>
+</head>
+<body onscroll="scroller()">
+
+
+    <div class="header">
+        <div class="containerone" id="containerone">        
+        <div class="topnav">
+            <div class="mobileapp">
+                
+                <img src="images/mobileapp.PNG" alt="">
+                               <span id="text"> Download Mobile App</span>
+            </div>
+            <div class="registration">
+                
+                    <li>Urdu</li>
+                    <li class="slash">|</li>
+                    <li>Sign Up</li>
+                    <li class="slash">|</li>
+                    <li>Sign In</li>
+                
+            </div>
+                  
+            </div>
+            <hr>
+        <div class="nav">
+            <img src="images/logo.svg" alt="">
+            <ul>
+                <li>Used Cars</li>
+                <li>New Cars</li>
+                <li>Bikes</li>
+                <li>Auto Store</li>
+                <li>Vedios</li>
+                <li>Forums</li>
+                <li>Blogs</li>
+                <li>More</li>
+            </ul>
+            <button>Post an Ad</button> 
+        </div>
+    </div>
+
+    <div class="container2" id="container2">        
+        <div class="topnav">
+            <div class="mobileapp">
+                
+                <img src="images/mobileapp.PNG" alt="">
+                               <span id="text"> Download Mobile App</span>
+            </div>
+            <div class="registration">
+                
+                    <li>Urdu</li>
+                    <li class="slash">|</li>
+                    <li>Sign Up</li>
+                    <li class="slash">|</li>
+                    <li>Sign In</li>
+                
+            </div>
+                  
+            </div>
+            <hr>
+        <div class="nav">
+            <img src="images/logo2.svg" alt="">
+            <ul>
+                <li>Used Cars</li>
+                <li>New Cars</li>
+                <li>Bikes</li>
+                <li>Auto Store</li>
+                <li>Vedios</li>
+                <li>Forums</li>
+                <li>Blogs</li>
+                <li>More</li>
+            </ul>
+            <button>Post an Ad</button> 
+        </div>
+    </div>
+</div>
+</body>
+</html>
