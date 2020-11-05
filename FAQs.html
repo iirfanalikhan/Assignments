@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <style>
+    body
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px;
+        padding: 0px;
+
+    }
+    .container
+    {   
+        position: relative;
+        left: 30%;
+        margin-top: 30px;
+        width: 40%;
+        height: auto;
+        border:1px rgb(205, 205, 205) solid;
+        border-radius: 5px;
+        line-height: 30px;
+        border-bottom: unset;
+    }   
+    .questions
+    {
+        border-bottom:1px solid rgb(215, 215, 215);
+        padding-left: 2px;
+    }
+    .questions button img
+    {
+        height: 15px;
+        width: 12px;
+    
+    }
+    .questions button
+    {
+        float: right;
+        margin-top: 3px;
+        margin-right: 3px;
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="firstQstn" class="questions">
+                     <span id="Qstn1">  Who is Founder of Pakistan?</span>
+                     <button><img src="downarrow.png" alt=""></button>
+                <div id="answer1" style="display: none;">
+                    <span><strong>Muhammad Ali Jinnah</strong> is the founder of Pakistan.</span>
+                </div>
+                
+                
+        </div>
+
+        <div id="secQstn" class="questions">
+                    <span id="Qstn2">  Who is the national poet of Pakistan?</span>
+                    <button><img src="downarrow.png" alt=""></button>
+            <div id="answer2" style="display: none;">
+                     <span><strong>Dr Allama Iqbal</strong> is National poet of Pakistan.</span>
+            </div>
+        </div>
+
+        <div id="thirdQstn"  class="questions">
+                 <span id="Qstn3">Who is the present PrimeMininster of Pakistan?</span>
+                 <button><img src="downarrow.png" alt=""></button>
+            <div id="answer3" style="display: none;">
+                 <span><strong>Mr. Imran Khan </strong> is present PrimeMininster of Pakistan  .</span>
+            </div>
+        </div>
+        
+        <div id="forthQstn"  class="questions">
+            <span id="Qstn4">Total population?</span>
+            <button><img src="downarrow.png" alt=""></button>
+       <div id="answer4" style="display: none;">
+            <span><strong>212.2 </strong>million population,The second largest Muslims population.</span>
+       </div>
+        </div>
+       <div id="fifthQstn"  class="questions">
+                 <span id="Qstn5">National animal of Pakistan?</span>
+                 <button><img src="downarrow.png" alt=""></button>
+            <div id="answer5" style="display: none;">
+                 <span><strong>Markhor</strong> is national animal .</span>
+            </div>
+        </div>
+
+        <div id="sixthQstn"  class="questions">
+            <span id="Qstn6">National language?</span>
+            <button><img src="downarrow.png" alt=""></button>
+       <div id="answer6" style="display:none;">
+            <span><strong>Urdu</strong> is the national language of Pakistan.</span>
+       </div>
+   </div>
+
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#firstQstn').click(function() {
+                $('#answer1').toggle(100);
+            });
+        
+            $('#secQstn').click(function () {
+                $('#answer2').toggle(100);
+                
+            });
+            $('#thirdQstn').click(function () {
+                $('#answer3').toggle(100);
+                
+            });
+            $('#forthQstn').click(function () {
+                $('#answer4').toggle(100);
+                
+            });
+            $('#fifthQstn').click(function () {
+                $('#answer5').toggle(100);
+                
+            });
+            $('#sixthQstn').click(function () {
+                $('#answer6').toggle(100);
+                
+            });
+
+
+
+            
+        });
+    </script>
+</body>
+</html>
